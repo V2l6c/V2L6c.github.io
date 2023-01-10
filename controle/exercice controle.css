@@ -15,4 +15,8 @@ ol li {list-style-type: upper-roman;}
 ol li ol li {list-style-type: lower-latin;}
 ol li ol li ol li {list-style-type: lower-roman;}
 
-nav {font-family:serif;}
+nav{
+	font-family:serif;
+	font-size: 13px
+	background: #f43c80;
+	height: 36px;}

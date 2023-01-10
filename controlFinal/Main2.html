@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<link rel="stylesheet" href="mainPDF.css" type="text/css" media="print"/>
+
+ <style>
+    body{background-color: lightblue; font-family: serif;}
+  </style>
+
+
+<h1>Formulaire </h1>
+
+<h2>Bienvenue sur l'espace de demandes de droits</h2>
+
+
+
+<h1> Civilité</h1>
+
+<fieldset>
+  <div>
+  <input type="checkbox" id="case1" name="groupe1" value="case 1" checked>
+  <label for="case1"> Monsieur</label>
+</div>
+<div>
+  <input type="checkbox" id="case2" name="groupe1" value="case 2">
+  <label for="case2">Madame </label>
+</div>
+<div>
+  <input type="checkbox" id="case3" name="groupe1" value="case 3">
+  <label for="case3">Je ne me prononce pas</label>
+</div>
+</fieldset>
+
+<h1> Qui êtes vous</h1>
+
+<fieldset>
+<form action="/page-traitement-donnees" method="post">
+<div>
+<label for="nom">Votre nom</label>
+<input type="text" id="nom" name="nom" placeholder="Martin" required>
+</div>
+<div>
+<label for="nom">Votre prénom</label>
+<input type="text" id="nom" name="nom" placeholder="Martin" required>
+</div>
+<div>
+<label for="email">Votre e-mail</label>
+<input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+</div>
+</fieldset>
+
+<h1> Votre statut</h1>
+
+<fieldset>
+  <div>
+  <input type="checkbox" id="case1" name="groupe1" value="case 1" checked>
+  <label for="case1"> étudiant</label>
+</div>
+<div>
+  <input type="checkbox" id="case2" name="groupe1" value="case 2">
+  <label for="case2">Travailleur </label>
+</div>
+<div>
+  <input type="checkbox" id="case3" name="groupe1" value="case 3">
+  <label for="case3">Autre</label>
+</div>
+</fieldset>
+
+<h1> Date et lieu</h1>
+
+<fieldset>
+<div>
+<label for="start">à qu'elle date vous remplisser ce formulaire:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2023-07-22"
+       min="2023-01-01" max="2023-12-31">
+</div>
+<div>
+<label for="lieu de résidence">lieu de résidence</label>
+<textarea id="message" name="message" placeholder="je vis au..." required></textarea>
+</div> 
+</fieldset>
+
+<h1>Qu'elle est votre réclamation</h1>
+
+<fieldset>
+<div>
+<select name="demande de droit" id="demande de droit">
+    <option value="">--Choisissez une option--</option>
+    <option value="droit d'accès à ces informations">droit d'accès à ces informations</option>
+    <option value="réclamation sur la décision">réclamation sur la décision de sélection</option>
+    <option value="accès à l'algorithme">accès à l'algorithme</option>
+    <option value="contacter un membre de l'administration">contact un membre de l'administration</option>
+    <option value="FAQ">FAQ</option>
+</select>
+</div>
+
+<div>
+<label for="message">Votre message</label>
+<textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+</div>
+<div>
+<button type="submit">Envoyer mon message</button>
+</div>
+</fieldset>
+
+<div>
+    <form>
+      <h3>pour plus d'information sur l'exercice de ces droits</h3>
+      <input type="button" onclick="window.location.href='https://design.cnil.fr/concepts/exercice-des-droits/';"value="quels sont mes droits"/>
+    </form>
+</div>
+
+<div>
+<a href="jevaispasdonnermonaddresse@gmail.com" class="btn btn-primary">Contactez-moi !</a>
+</div>
+
+</body>
+
+<img src="https://www.google.com/search?q=logo+upec&rlz=1C1CHBF_enFR879FR879&sxsrf=AJOqlzVEIx6XioIrH_CchSt1f9bW4hwLXA:1673358739070&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjch-WJk738AhWEYqQEHeVGC1EQ_AUoAXoECAEQAw&biw=1536&bih=722&dpr=1.25#imgrc=xzXthiGvovSo6M" alt="Logo Upec" width=30% height=30% title="logo de l'université"/>
+
+</html>

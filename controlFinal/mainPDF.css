@@ -1,0 +1,43 @@
+
+
+body { /* Modifications : la couleur de fond de page - la police - l'unité utilisée pour la taille de la police  */
+    background-color : white ;
+    font-family : "Arial;" ;
+    font-size : 15pt ;}
+  
+  #page { /* Modifications : suppression de la bordure - marges */
+    margin : 30pt ;
+    border : none ;}
+  
+  #banner, #menuright, #footer #checkbox { /* Les éléments qui ne seront pas affichés  */
+    display :none;}
+
+    
+  h1#top { /* Affichage du titre */
+    margin : 0 ;
+    padding : 0 ;
+    text-indent : 0 ;
+    line-height : 25pt ;
+    font-size : 25pt ; }
+  
+@media print {
+  fieldset {
+    border: none;
+  }
+
+  legend {
+    display: none;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+} 
+  input[type="checkbox"]:not(:checked) + label{
+    display: none;
+} 
+  
+  input[type="checkbox"]:checked + label::before {
+    content: "- ";
+  }
+    
+}
